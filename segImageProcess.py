@@ -58,7 +58,6 @@ class samImageManager:
         for tempMask in self._maskList:
             mask = mask + tempMask
         # 形态学开运算去除mask中的噪音
-        kernel = np.ones((10, 10), np.uint8)
+        kernel = np.ones((20, 20), np.uint8)
         opening = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel, iterations=3)
-        print()
         cv2.imwrite(self._maskPath + '/' + self._fileName, opening * 255)
