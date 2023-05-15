@@ -10,7 +10,7 @@
    pip install -r requirements.txt
    ```
 
-2. 下载SAM模型,放在 **./models/** 路径下，下载地址：这是一个链接 [基础研究部网盘](**aidt.top:8100** "")。
+2. 下载SAM模型,放在 **./models/** 路径下，下载地址：这是一个链接 [基础研究部网盘](**aidt.top:8100**)。
 
 
 
