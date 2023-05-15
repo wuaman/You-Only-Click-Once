@@ -108,7 +108,7 @@ def makexml(picPath, txtPath, xmlPath):  # txt所在文件夹路径，xml文件�
 
 
 if __name__ == "__main__":
-    picPath = "DataSet/Image/"  # 图片所在文件夹路径，后面的/一定要带上
-    txtPath = "DataSet/label/"  # txt所在文件夹路径，后面的/一定要带上
-    xmlPath = "DataSet/xml/"  # xml文件保存路径，后面的/一定要带上
+    picPath = "../DataSet/Image/"  # 图片所在文件夹路径，后面的/一定要带上
+    txtPath = "../DataSet/label/"  # txt所在文件夹路径，后面的/一定要带上
+    xmlPath = "../DataSet/xml/"  # xml文件保存路径，后面的/一定要带上
     makexml(picPath, txtPath, xmlPath)
