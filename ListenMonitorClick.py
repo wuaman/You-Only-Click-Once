@@ -23,9 +23,6 @@ class ClickMonitor:
         image = cv2.imread(self.image_path)
         height, width, _ = image.shape
         max_size = 800  # 设定最大大小为800x800
-        # if height > max_size or width > max_size:
-        #     scale = min(max_size / height, max_size / width)
-        #     image = cv2.resize(image, None, fx=scale, fy=scale)
         if height > max_size or width > max_size:
             scale = min(max_size / height, max_size / width)
             image = cv2.resize(image, None, fx=scale, fy=scale)
@@ -35,7 +32,6 @@ class ClickMonitor:
         # 创建窗口并绑定鼠标事件
         cv2.namedWindow(self.window_name)
         cv2.setMouseCallback(self.window_name, self._on_mouse_click)
-
         # 显示图像
         while True:
             # 在图像上绘制已选择的点
