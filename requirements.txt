@@ -1,0 +1,5 @@
+numpy==1.21.6
+torch==1.8.2+cu102
+torchvision==0.9.2+cu102
+opencv-python==4.1.2.30
+future==0.18.2
