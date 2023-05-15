@@ -18,7 +18,7 @@ def show_popup(message):
     root = tk.Tk()
     root.withdraw()
     # 显示弹窗
-    messagebox.showinfo("Aman's 数据标注工具", message)
+    messagebox.showinfo("HLWY数据标注工具", message)
     # 关闭主窗口
     root.destroy()
 
